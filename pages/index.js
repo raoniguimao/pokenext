@@ -6,7 +6,7 @@ import Card from '../components/Card';
 // carrega listagem de objetos
 export async function getStaticProps() {
   const api = "https://pokeapi.co/api/v2/pokemon/";
-  const maxPokemons = 252;
+  const maxPokemons = 251;
 
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
   const data = await res.json();
